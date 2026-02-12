@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@theme {
+    /* Primary */
+    --color-blue-500: hsl(215, 51%, 70%);
+    --color-cyan-400: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --color-blue-950 (main BG): hsl(217, 54%, 11%);
+    --color-blue-900 (card BG): hsl(216, 50%, 16%);
+    --color-blue-800 (line): hsl(215, 32%, 27%);
+    --color-white: hsl(0, 0%, 100%);
+}
