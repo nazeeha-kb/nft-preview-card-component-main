@@ -11,12 +11,29 @@
 
 @theme {
     /* Primary */
-    --color-blue-500: hsl(215, 51%, 70%);
-    --color-cyan-400: hsl(178, 100%, 50%);
+    --color-cust-blue-500: hsl(215, 51%, 70%);
+    --color-cust-cyan-400: hsl(178, 100%, 50%);
 
     /* Neutral */
-    --color-blue-950 (main BG): hsl(217, 54%, 11%);
-    --color-blue-900 (card BG): hsl(216, 50%, 16%);
-    --color-blue-800 (line): hsl(215, 32%, 27%);
-    --color-white: hsl(0, 0%, 100%);
+    /* main bg */
+    --color-cust-blue-950: hsl(217, 54%, 11%);
+    /* Card bg */
+    --color-cust-blue-900: hsl(216, 50%, 16%);
+    /* line */
+    --color-cust-blue-800: hsl(215, 32%, 27%);
+
+    /* Font size */
+    --text-para: 18px;
+
+    /* Weights: 300 - light, 400 - normal, 600 - semibold */
+}
+
+@layer base {
+    p {
+        @apply md:text-para;
+    }
+    
+    a {
+        @apply cursor-pointer hover:text-cust-cyan-400;
+    }
 }
